@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <h1>CALCULATOR</h1>
+        </nav>
+        </header>
+        <section>
+            <h2>🧮 How to Use This Calculator</h2>
+                <b>This calculator allows you to perform basic arithmetic operations quickly and easily.</b>
+                    <ul>
+                        <li>Click the number buttons to enter values.</li>
+                        <li>Use the operators (+, −, ×, ÷) to build your expression.</li>
+                        <li>Press “=” to get the result instantly.</li>
+                        <li>Use “C” to clear the entire display.</li>
+                        <li>Use “Del” to remove the last digit.</li>
+                        <li>You can also use your keyboard.</li>
+                        <li>Type numbers and operators directly.</li>
+                        <li>Press Enter to calculate.</li>
+                        <li>Press Backspace to delete.</li>
+                        <li>Press Escape to clear the screen.</li>
+                    </ul>
+            <h2>📜 History Feature</h2>
+                <ul>
+                    <li>All your recent calculations are saved automatically.</li> 
+                    <li>You can: View previous results on the right panel.</li>
+                    <li>Click any history item to reuse that calculation.</li>
+                    <li>Clear all history using the “Clear History” button.</li>
+                </ul>
+            <h3><b>⚠️ Invalid operations (like division by zero) will show an “Error” message.</b></h3>
+        </section>
+        <section>
+            <div class="psuedoBody">
+                <div class="calculator">
+                    <input type="text" id="display" disabled/>
+                    <div class="keys">
+                        <button class="clear" onclick="clearDisplay()">C</button>
+                        <button class="backspace" onclick="backspace()">Del</button>
+                        <button class="operator" onclick="appendValue('/')">&divide;</button>
+                        
+                        <button onclick="appendValue('7')">7</button>
+                        <button onclick="appendValue('8')">8</button>
+                        <button onclick="appendValue('9')">9</button>
+                        <button class="operator" onclick="appendValue('*')">&times;</button>
+                        
+                        <button onclick="appendValue('4')">4</button>
+                        <button onclick="appendValue('5')">5</button>
+                        <button onclick="appendValue('6')">6</button>
+                        <button class="operator" onclick="appendValue('-')">-</button>
+                        
+                        <button onclick="appendValue('1')">1</button>
+                        <button onclick="appendValue('2')">2</button>
+                        <button onclick="appendValue('3')">3</button>
+                        <button class="operator" onclick="appendValue('+')">+</button>
+                        
+                        <button class="zero" onclick="appendValue('0')">0</button>
+                        <button onclick="appendValue('.')">.</button>
+                        <button class="equals" onclick="calculate()">=</button>
+                    </div>
+                </div>
+                <div class="history">
+                    <input type="text" value="HISTORY" id="history1" readonly/>
+        
+                    <div id="history"></div>
+                    <div class="button">
+                        <button class="clearhistory" onclick="clearhistory()">Clear History</button>
+                    </div>
+                </div>
+            </div>
+        <script type="text/javascript" charset="utf-8" src="logic.js"></script>
+        </section>
+        <section class="contact">
+            <h2>CONTACT</h2>
+            <i class="fa-solid fa-envelope"></i>&nbsp;E-Mail:&nbsp;<a href="mailto:manesoham39@gmail.com?subject=feedback">Click Here To E-Mail Me</a><br><br>
+            <i class="fa-brands fa-github"></i>&nbsp;Github:&nbsp;<a href="https://github.com/itzsohammane">Click Here For My Github Profile</a><br /><br />
+        </section>
+        <footer>&copy;2026 All Rights Reserved</footer>
+    </body>
+</html>
