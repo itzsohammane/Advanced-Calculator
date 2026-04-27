@@ -5,6 +5,14 @@ A modern, feature-rich calculator built using HTML, CSS, and JavaScript, designe
 ## 🚀 Live Demo
 👉 https://itzsohammane.github.io/Advanced-Calculator
 <br><br>
+## 📸 Screenshots
+<br>
+<img src="Website-Screenshot/Screenshot1.png" alt="Screenshot1" width="100%">
+<br>
+<img src="Website-Screenshot/Screenshot2.png" alt="Screenshot2" width="100%">
+<br>
+<img src="Website-Screenshot/Screenshot3.png" alt="Screenshot3" width="100%">
+<br>
 <h2>📌 Features</h2>
 <dl>
     <dt>➕ Basic Arithmetic Operation:</dt>
